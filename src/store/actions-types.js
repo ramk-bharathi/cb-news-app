@@ -1,0 +1,3 @@
+export const GET_ARTICLES = 'GET_ARTICLES';
+export const GET_SOURCES = 'GET_SOURCES';
+export const CLEAR_ARTICLES = 'CLEAR_ARTICLES';
