@@ -6,7 +6,7 @@ class NewsSourcesListComponent extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <FlatList data={this.props.sources} renderItem={(source) => (
+                <FlatList data={this.props.sources} keyExtractor={(source, index) => source.id} renderItem={(source) => (
                     <NewsSourceItem newsHeadline={source.item.name} sourcePressed={() => this.props.sourceSelected(source.item.id)}/>
                 )}/>
             </View>

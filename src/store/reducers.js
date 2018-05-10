@@ -22,12 +22,7 @@ const newsReducers = (state = initialState, actions) => {
         case GET_SOURCES: {
             return {
                 ...state,
-                sources: state.sources.concat(actions.sources.map(source => {
-                    return {
-                        ...source,
-                        key: source.id.toString()
-                    };
-                }))
+                sources: actions.sources
             };
         };
         case CLEAR_ARTICLES: {
